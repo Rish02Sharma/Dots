@@ -10,11 +10,12 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context="com.example.rishabh.dotsconnect.MainActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect Dots"
+        android:text="@string/label"
         android:textSize="20sp"
         android:layout_gravity="center"/>
 
@@ -25,75 +26,119 @@
         android:orientation="horizontal"
         >
     <ImageView
+        tools:ignore="image"
         android:layout_width="20sp"
         android:layout_height="20sp"
         android:src="@drawable/dot"
-        android:layout_margin="20sp"/>
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginLeft="20sp"/>
+
+        <ImageView
+            android:id="@+id/H1_1"
+            android:layout_width="60sp"
+            android:layout_height="20sp"
+            android:src="@drawable/black"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"/>
 
         <ImageView
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:src="@drawable/dot"
-            android:layout_margin="20sp"/>
+            android:layout_marginTop="30sp" />
+        <ImageView
+            android:id="@+id/H1_2"
+            android:layout_width="60sp"
+            android:layout_height="20sp"
+            android:src="@drawable/black"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"/>
         <ImageView
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:src="@drawable/dot"
-            android:layout_margin="20sp"/>
+            android:layout_marginTop="30sp" />
+        <ImageView
+            android:id="@+id/H1_3"
+            android:layout_width="60sp"
+            android:layout_height="20sp"
+            android:src="@drawable/black"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"/>
         <ImageView
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:src="@drawable/dot"
-            android:layout_margin="20sp"/>
+            android:layout_marginTop="30sp" />
+        <ImageView
+            android:id="@+id/H1_4"
+            android:layout_width="60sp"
+            android:layout_height="20sp"
+            android:src="@drawable/black"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"/>
         <ImageView
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:src="@drawable/dot"
-            android:layout_margin="20sp"/>
-        <ImageView
-            android:layout_width="20sp"
-            android:layout_height="20sp"
-            android:src="@drawable/dot"
-            android:layout_margin="20sp"/>
+            android:layout_marginTop="30sp"
+           />
+
     </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
             <ImageView
+                android:id="@+id/V1_1"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
 
             <ImageView
+                android:id="@+id/V1_2"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V1_3"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V1_4"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V1_5"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -104,34 +149,104 @@
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/H2_1"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
 
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H2_2"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H2_3"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H2_4"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                />
         </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/V2_1"
+            android:layout_width="20sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginStart="20sp"
+            android:src="@drawable/vertical"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"/>
+
+           <ImageView
+               android:id="@+id/V2_2"
+               android:layout_width="20sp"
+               android:layout_height="60sp"
+               android:layout_marginLeft="60sp"
+               android:layout_marginStart="60sp"
+               android:src="@drawable/vertical"
+               android:layout_gravity="bottom"
+               android:scaleType="centerCrop"/>
+           <ImageView
+               android:id="@+id/V2_3"
+               android:layout_width="20sp"
+               android:layout_height="60sp"
+               android:layout_marginLeft="60sp"
+               android:layout_marginStart="60sp"
+               android:src="@drawable/vertical"
+               android:layout_gravity="bottom"
+               android:scaleType="centerCrop"/>
+           <ImageView
+               android:id="@+id/V2_4"
+               android:layout_width="20sp"
+               android:layout_height="60sp"
+               android:layout_marginLeft="60sp"
+               android:layout_marginStart="60sp"
+               android:src="@drawable/vertical"
+               android:layout_gravity="bottom"
+               android:scaleType="centerCrop"/>
+           <ImageView
+               android:id="@+id/V2_5"
+               android:layout_width="20sp"
+               android:layout_height="60sp"
+               android:layout_marginLeft="60sp"
+               android:layout_marginStart="60sp"
+               android:src="@drawable/vertical"
+               android:layout_gravity="bottom"
+               android:scaleType="centerCrop"/>
+       </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -142,34 +257,107 @@
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/H3_1"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
 
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H3_2"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H3_3"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H3_4"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                />
         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/V3_1"
+                android:layout_width="20sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/V3_2"
+                android:layout_width="20sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/V3_3"
+                android:layout_width="20sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/V3_4"
+                android:layout_width="20sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/V3_5"
+                android:layout_width="20sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -180,108 +368,103 @@
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/H4_1"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
 
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H4_2"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H4_3"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H4_4"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
             <ImageView
+                android:id="@+id/V4_1"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
 
             <ImageView
+                android:id="@+id/V4_2"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V4_3"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V4_4"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
             <ImageView
+                android:id="@+id/V4_5"
                 android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_height="60sp"
+                android:layout_marginLeft="60sp"
+                android:layout_marginStart="60sp"
+                android:src="@drawable/vertical"
+                android:layout_gravity="bottom"
+                android:scaleType="centerCrop"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -292,34 +475,59 @@
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"/>
+
+            <ImageView
+                android:id="@+id/H5_1"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
 
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H5_2"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H5_3"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:src="@drawable/dot" />
+            <ImageView
+                android:id="@+id/H5_4"
+                android:layout_width="60sp"
+                android:layout_height="20sp"
+                android:src="@drawable/black"
+                android:scaleType="centerCrop"/>
             <ImageView
                 android:layout_width="20sp"
                 android:layout_height="20sp"
                 android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
-            <ImageView
-                android:layout_width="20sp"
-                android:layout_height="20sp"
-                android:src="@drawable/dot"
-                android:layout_margin="20sp"/>
+                />
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/undobutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
